@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/txtInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/butGenerar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empezar" />
+
+    <Button
+        android:id="@+id/butParar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parar" />
+</LinearLayout>
