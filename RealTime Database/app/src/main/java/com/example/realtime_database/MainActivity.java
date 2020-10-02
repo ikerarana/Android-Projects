@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.realtime_database.DAL.DataSensors;
+import com.example.realtime_database.Utilities.CrearDatosSinteticos;
 import com.example.realtime_database.Utilities.HiloBD;
 import com.google.firebase.database.DatabaseReference;
 
@@ -16,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnParar;
     private EditText txtInsert;
     private DatabaseReference dbRef;
+    private static DataSensors data = null;
+
     ////////////// VARIABLES PARA EL MANEJO DE DATOS /////////////////////
 
     @Override
@@ -40,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
                         data = CrearDatosSinteticos.crearDatosSinteticos();
                         dbRef.child("Data Sensor "+Integer.toString(i)).setValue(data);
 
-                    }
-*/
+                    }*/
+
                     HiloBD.LlamadaHilo();
 
                 }catch (Exception e){
